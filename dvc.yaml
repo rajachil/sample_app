@@ -22,11 +22,11 @@ stages :
     deps : 
       - data/processed/train_winequality.csv
       - data/processed/test_winequality.csv
-    #params :
-    #  - report/scrores.json:
-    #    cache : false
-    #  - report/params.json :
-    #    cache : false
+    metrics :
+      - report/scores.json:
+          cache : false
+      - report/params.json :
+          cache : false
     
     outs : 
       - saved_models/model.joblib
