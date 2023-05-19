@@ -5,7 +5,7 @@ import joblib
 import numpy as np
 
 
-#params_path = "params.yaml"
+params_path = "params.yaml"
 schema_path = os.path.join("prediction_service", "schema_in.json")
 
 class NotInRange(Exception):
@@ -91,4 +91,3 @@ def api_response(dict_request):
     except Exception as e:
         response = {"response": str(e) }
         return response
-
